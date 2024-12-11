@@ -4,9 +4,11 @@ import com.example.BancoMalvaderWeb.DTO.ContaCorrenteDTO;
 import com.example.BancoMalvaderWeb.DTO.ContaDTO;
 import com.example.BancoMalvaderWeb.Model.ContaCorrenteModel;
 import com.example.BancoMalvaderWeb.Model.ContaModel;
+import org.springframework.stereotype.Component;
 
+@Component
 public class ContaCorrenteMapper {
-   public static ContaCorrenteDTO map(ContaCorrenteModel contaModel) {
+   public ContaCorrenteDTO map(ContaCorrenteModel contaModel) {
         ContaCorrenteDTO DTO = new ContaCorrenteDTO();
         DTO.setIdConta(contaModel.getIdConta());
         DTO.setNumeroConta(contaModel.getNumeroConta());
@@ -17,7 +19,7 @@ public class ContaCorrenteMapper {
         return DTO;
     }
 
-    public static ContaCorrenteModel map(ContaCorrenteDTO contaDTO) {
+    public ContaCorrenteModel map(ContaCorrenteDTO contaDTO) {
         ContaModel contaModel = new ContaModel();
         contaModel.setIdConta(contaDTO.getIdConta());
         contaModel.setNumeroConta(contaDTO.getNumeroConta());

@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class ContaPoupancaMapper {
 
-    public static ContaPoupancaDTO map(ContaPoupancaModel contaPoupancaModel) {
+    public ContaPoupancaDTO map(ContaPoupancaModel contaPoupancaModel) {
         ContaPoupancaDTO contaPoupancaDTO = new ContaPoupancaDTO();
         contaPoupancaDTO.setIdConta(contaPoupancaModel.getIdConta());
         contaPoupancaDTO.setNumeroConta(contaPoupancaModel.getNumeroConta());
@@ -19,7 +19,7 @@ public class ContaPoupancaMapper {
         return contaPoupancaDTO;
     }
 
-    public static ContaPoupancaModel map(ContaPoupancaDTO contaPoupancaDTO) {
+    public ContaPoupancaModel map(ContaPoupancaDTO contaPoupancaDTO) {
         ContaPoupancaModel contaPoupancaModel = new ContaPoupancaModel();
         contaPoupancaModel.setIdConta(contaPoupancaDTO.getIdConta());
         contaPoupancaModel.setNumeroConta(contaPoupancaDTO.getNumeroConta());

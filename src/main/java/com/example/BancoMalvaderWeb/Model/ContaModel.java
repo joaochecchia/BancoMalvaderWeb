@@ -12,7 +12,7 @@ public class ContaModel {
     @Id
     @Column(name = "id_conta")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Double idConta;
+    private Long idConta;
 
     @Column(name = "numero_conta")
     private String numeroConta;

@@ -12,7 +12,7 @@ public class EnderecoModel {
     @Id
     @Column(name = "id_endereco")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Long idEndereco;
 
     @Column(length = 10, nullable = false)
     private String cep;

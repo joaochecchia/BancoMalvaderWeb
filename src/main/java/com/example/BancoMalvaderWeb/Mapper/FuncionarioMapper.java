@@ -2,10 +2,12 @@ package com.example.BancoMalvaderWeb.Mapper;
 
 import com.example.BancoMalvaderWeb.DTO.FuncionarioDTO;
 import com.example.BancoMalvaderWeb.Model.FuncionarioModel;
+import org.springframework.stereotype.Component;
 
+@Component
 public class FuncionarioMapper {
 
-    public static FuncionarioDTO map(FuncionarioModel model) {
+    public FuncionarioDTO map(FuncionarioModel model) {
         FuncionarioDTO dto = new FuncionarioDTO();
         dto.setIdUsuario(model.getIdUsuario());
         dto.setNome(model.getNome());
@@ -21,7 +23,7 @@ public class FuncionarioMapper {
         return dto;
     }
 
-    public static FuncionarioModel map(FuncionarioDTO dto) {
+    public FuncionarioModel map(FuncionarioDTO dto) {
         FuncionarioModel model = new FuncionarioModel();
         model.setIdUsuario(dto.getIdUsuario());
         model.setNome(dto.getNome());

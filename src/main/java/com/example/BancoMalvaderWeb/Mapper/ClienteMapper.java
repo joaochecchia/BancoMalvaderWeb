@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class ClienteMapper {
 
-    public static ClienteDTO map(ClienteModel model) {
+    public ClienteDTO map(ClienteModel model) {
         ClienteDTO dto = new ClienteDTO();
         dto.setIdUsuario(model.getIdUsuario());
         dto.setNome(model.getNome());
@@ -22,7 +22,7 @@ public class ClienteMapper {
         return dto;
     }
 
-    public static ClienteModel map(ClienteDTO dto) {
+    public ClienteModel map(ClienteDTO dto) {
         ClienteModel model = new ClienteModel();
         model.setIdUsuario(dto.getIdUsuario());
         model.setNome(dto.getNome());

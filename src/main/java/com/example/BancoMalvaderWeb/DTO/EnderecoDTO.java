@@ -7,7 +7,7 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 public class EnderecoDTO {
-    private Long id;
+    private Long idEndereco;
     private String cep;
     private String cidade;
     private String bairro;
