@@ -8,8 +8,6 @@ import java.util.List;
 @Entity
 @Table(name = "cliente")
 @Data
-@Getter
-@Setter
 @EqualsAndHashCode(callSuper = true)
 @AllArgsConstructor
 @NoArgsConstructor

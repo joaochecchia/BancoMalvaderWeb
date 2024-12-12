@@ -1,5 +1,6 @@
 package com.example.BancoMalvaderWeb.Service;
 
+import com.example.BancoMalvaderWeb.DTO.ClienteDTO;
 import com.example.BancoMalvaderWeb.DTO.ContaCorrenteDTO;
 import com.example.BancoMalvaderWeb.Mapper.ContaCorrenteMapper;
 import com.example.BancoMalvaderWeb.Model.ContaCorrenteModel;

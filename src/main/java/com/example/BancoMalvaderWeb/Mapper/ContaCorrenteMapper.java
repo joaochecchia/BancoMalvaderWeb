@@ -1,9 +1,7 @@
 package com.example.BancoMalvaderWeb.Mapper;
 
 import com.example.BancoMalvaderWeb.DTO.ContaCorrenteDTO;
-import com.example.BancoMalvaderWeb.DTO.ContaDTO;
 import com.example.BancoMalvaderWeb.Model.ContaCorrenteModel;
-import com.example.BancoMalvaderWeb.Model.ContaModel;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -15,18 +13,22 @@ public class ContaCorrenteMapper {
         DTO.setAgencia(contaModel.getAgencia());
         DTO.setSaldo(contaModel.getSaldo());
         DTO.setCliente(contaModel.getCliente());
+        DTO.setLimite(contaModel.getLimite());
+        DTO.setDataVencimento(contaModel.getDataVencimento());
 
         return DTO;
     }
 
     public ContaCorrenteModel map(ContaCorrenteDTO contaDTO) {
-        ContaModel contaModel = new ContaModel();
-        contaModel.setIdConta(contaDTO.getIdConta());
-        contaModel.setNumeroConta(contaDTO.getNumeroConta());
-        contaModel.setAgencia(contaDTO.getAgencia());
-        contaModel.setSaldo(contaDTO.getSaldo());
-        contaModel.setCliente(contaDTO.getCliente());
+        ContaCorrenteModel model = new ContaCorrenteModel();
+        model.setIdConta(contaDTO.getIdConta());
+        model.setNumeroConta(contaDTO.getNumeroConta());
+        model.setAgencia(contaDTO.getAgencia());
+        model.setSaldo(contaDTO.getSaldo());
+        model.setCliente(contaDTO.getCliente());
+        model.setLimite(contaDTO.getLimite());
+        model.setDataVencimento(contaDTO.getDataVencimento());
 
-        return new ContaCorrenteModel();
+        return model;
     }
 }

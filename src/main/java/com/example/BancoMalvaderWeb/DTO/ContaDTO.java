@@ -7,7 +7,7 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 public class ContaDTO {
-    private Double idConta;
+    private Long idConta;
     private String numeroConta;
     private String agencia;
     private double saldo;

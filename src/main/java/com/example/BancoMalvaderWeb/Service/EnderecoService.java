@@ -11,8 +11,8 @@ import org.springframework.stereotype.Service;
 @AllArgsConstructor
 public class EnderecoService {
 
-    EnderecoRepository enderecoRepository;
-    EnderecoMapper enderecoMapper;
+    private final EnderecoRepository enderecoRepository;
+    private final EnderecoMapper enderecoMapper;
 
     public EnderecoDTO findEnderecoById(Long id){
         return  enderecoRepository.findById(id)

@@ -8,6 +8,7 @@ import lombok.*;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Table(name = "conta")
 public class ContaModel {
     @Id
     @Column(name = "id_conta")
@@ -22,6 +23,7 @@ public class ContaModel {
     private double saldo;
 
     @ManyToOne
+    @JoinColumn(name = "cliente_id_usuario", nullable = false)
     private ClienteModel cliente;
 }
 

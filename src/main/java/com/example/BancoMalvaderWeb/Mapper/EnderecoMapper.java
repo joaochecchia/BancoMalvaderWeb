@@ -11,9 +11,9 @@ public class EnderecoMapper {
 
        model.setIdEndereco(dto.getIdEndereco());
        model.setCep(dto.getCep());
+       model.setCidade(dto.getCidade());
        model.setBairro(dto.getBairro());
        model.setLocal(dto.getLocal());
-       model.setCidade(dto.getCidade());
        model.setNumeroCasa(dto.getNumeroCasa());
        model.setUsuario(dto.getUsuario());
 
@@ -25,9 +25,9 @@ public class EnderecoMapper {
 
         dto.setIdEndereco(model.getIdEndereco());
         dto.setCep(model.getCep());
+        dto.setCidade(model.getCidade());
         dto.setBairro(model.getBairro());
         dto.setLocal(model.getLocal());
-        dto.setCidade(model.getCidade());
         dto.setNumeroCasa(model.getNumeroCasa());
         dto.setUsuario(model.getUsuario());
 

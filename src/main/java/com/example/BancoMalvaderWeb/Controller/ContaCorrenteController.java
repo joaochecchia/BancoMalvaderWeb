@@ -1,5 +1,6 @@
 package com.example.BancoMalvaderWeb.Controller;
 
+import com.example.BancoMalvaderWeb.DTO.ClienteDTO;
 import com.example.BancoMalvaderWeb.DTO.ContaCorrenteDTO;
 import com.example.BancoMalvaderWeb.Service.ContaCorrenteService;
 import lombok.AllArgsConstructor;
