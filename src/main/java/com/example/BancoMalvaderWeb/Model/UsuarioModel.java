@@ -45,6 +45,4 @@ public class UsuarioModel {
     @Column(name = "data_edicao")
     private LocalDate dataEdicao;
 
-    @OneToOne(mappedBy = "usuarioModel")
-    private UserSecurityModel userSecurity;
 }

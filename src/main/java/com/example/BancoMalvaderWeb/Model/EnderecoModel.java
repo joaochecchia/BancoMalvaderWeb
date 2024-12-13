@@ -31,4 +31,5 @@ public class EnderecoModel {
     @ManyToOne
     @JoinColumn(name = "id_usuario")
     private UsuarioModel usuario;
+
 }
