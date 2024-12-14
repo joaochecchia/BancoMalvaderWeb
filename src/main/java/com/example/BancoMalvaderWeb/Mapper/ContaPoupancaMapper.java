@@ -2,6 +2,7 @@ package com.example.BancoMalvaderWeb.Mapper;
 
 import com.example.BancoMalvaderWeb.Model.ContaPoupancaModel;
 import com.example.BancoMalvaderWeb.DTO.ContaPoupancaDTO;
+import lombok.experimental.UtilityClass;
 import org.springframework.stereotype.Component;
 
 @Component
