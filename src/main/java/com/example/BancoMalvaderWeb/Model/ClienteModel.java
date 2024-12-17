@@ -16,3 +16,4 @@ public class ClienteModel extends UsuarioModel{
     @OneToMany(mappedBy = "cliente")
     List<ContaModel> contas;
 }
+
